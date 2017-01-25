@@ -1,0 +1,85 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="66ca3771-0003-49a3-982a-52a34bc96d77" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Schools K12 DW_Discipline</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Absence</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="332c45c9-91ac-47a7-8371-ec60b80d49ab">
+          <ID>Fact Absence</ID>
+          <Name>Fact Absence</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="404b60b7-b7b4-4a2e-99ba-648230c8e121">
+            <DataSourceViewID>Schools K12 DW_Discipline</DataSourceViewID>
+            <TableID>dbo_factAbsence</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Discipline</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3a95be86-9ef5-497f-b466-3806b1364b52">
+          <ID>Fact Discipline</ID>
+          <Name>Fact Discipline</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3f94f2bf-54a0-4ab5-ad20-f92bd12d4cf5">
+            <DataSourceViewID>Schools K12 DW_Discipline</DataSourceViewID>
+            <TableID>dbo_factDiscipline</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact School KPI</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="8bb0e6d8-27b5-4354-ba8a-67c8e30fdf04">
+          <ID>Fact School KPI</ID>
+          <Name>Fact School KPI</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3f8460a7-31b9-4d1f-ae1d-8796b1c43ded">
+            <DataSourceViewID>Schools K12 DW_Discipline</DataSourceViewID>
+            <TableID>dbo_factSchoolKPI</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Discipline 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="b2ebd5b6-1af2-4bfb-8f19-7d76655350ef">
+          <ID>Fact Discipline</ID>
+          <Name>Fact Discipline</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f6b8235c-817d-4e31-8423-4191cb288b12">
+            <DataSourceViewID>Schools K12 DW_Discipline</DataSourceViewID>
+            <TableID>dbo_factDiscipline</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
